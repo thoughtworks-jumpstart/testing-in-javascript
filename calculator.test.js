@@ -1,7 +1,12 @@
 const calc = require('./calculator')
 
-if (calc.add(1, 2) !== 3) {
-  throw new Error('FAILED')
-} else {
-  console.log('PASSED')
+function expect(actual, expected) {
+  if (actual !== expected) {
+    throw new Error('FAILED')
+  } else {
+    console.log('PASSED')
+  }
 }
+
+const sum = calc.add(1, 2)
+expect(sum, 3)
