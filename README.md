@@ -3,7 +3,9 @@
 ## Objectives
 
 - Write a simple test case (2-simple-test-case)
-- Write a simple test library (3-simple-expect-case)
+- Write a simple test function (3-simple-expect-case)
+- Improve on your test function (4-better-expect-case)
+- Create a simple test library (5-expect-module)
 - Use Node's assert library (6-expect-with-assert)
 - Use Jest test library (7-use-jest)
 
