@@ -1,12 +1,13 @@
+const assert = require('assert')
+
 function expect(actual) {
   return {
     toBe: expected => {
-      if (actual !== expected) {
-        throw new Error(
-          `FAILED: Expected ${expected}, but got ${actual} instead`
-        );
-      } else {
-        console.log("PASSED");
+      try {
+        assert.equal(actual, expected)
+        console.log('🎉 PASSED')
+      } catch (e) {
+        console.error(`🙅‍♀️ FAILED: Expected ${e.expected}, but got ${e.actual}`)
       }
     }
   };
